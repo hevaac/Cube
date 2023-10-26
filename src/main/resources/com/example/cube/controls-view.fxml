@@ -6,11 +6,13 @@
 <?import javafx.geometry.Insets?>
 <TabPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cube.CubeController">
    <tabs>
+      <!--tab for the cube size-->
       <Tab closable="false" text="CubeSize">
          <content>
             <VBox spacing="10.0">
-                  <Label text="X-Size">
-                  </Label>
+               <!-- X-size -->
+               <Label text="X-Size">
+               </Label>
                <Slider fx:id="sldX1" majorTickUnit="0.5"
                        max="2" showTickLabels="true" value="1">
                </Slider>
@@ -18,6 +20,25 @@
                   <Insets bottom="10.0"/>
                </VBox.margin>
 
+               <!-- Y-size -->
+               <Label text="Y-Size">
+               </Label>
+               <Slider fx:id="sldY1" majorTickUnit="0.5"
+                       max="2" showTickLabels="true" value="1">
+               </Slider>
+               <VBox.margin>
+                  <Insets bottom="10.0"/>
+               </VBox.margin>
+
+               <!-- Z-size -->
+               <Label text="Z-Size">
+               </Label>
+               <Slider fx:id="sldZ1" majorTickUnit="0.5"
+                       max="2" showTickLabels="true" value="1">
+               </Slider>
+               <VBox.margin>
+                  <Insets bottom="10.0"/>
+               </VBox.margin>
          </VBox>
          </content>
       </Tab>
