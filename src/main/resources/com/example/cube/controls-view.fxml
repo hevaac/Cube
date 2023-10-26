@@ -72,4 +72,74 @@
          </VBox.margin>
       </VBox>
    </Tab>
+
+   <!--tab for the light location-->
+   <Tab closable="false" text="Light Location">
+      <VBox spacing="10.0">
+         <!-- X-light location -->
+         <Label text="X-light location">
+         </Label>
+         <Slider fx:id="sldX3" blockIncrement="20.0" majorTickUnit="250.0"
+                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         </Slider>
+
+         <!-- Y-size -->
+         <Label text="Y-light location">
+         </Label>
+         <Slider fx:id="sldY3" blockIncrement="20.0" majorTickUnit="250.0"
+                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         </Slider>
+
+         <!-- Z-size -->
+         <Label text="Z-light location">
+         </Label>
+         <Slider fx:id="sldZ3" blockIncrement="20.0" majorTickUnit="250.0"
+                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         </Slider>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+      </VBox>
+   </Tab>
+
+   <!--tab for the cube rotation-->
+   <Tab closable="false" text="Cube Rotation">
+      <VBox spacing="10.0">
+         <!-- X-rotate -->
+         <Label text="X-rotate">
+         </Label>
+         <Slider fx:id="sldX4" blockIncrement="20.0" majorTickUnit="45.0"
+                 max="360.0" minorTickCount="20" showTickLabels="true">
+         </Slider>
+
+         <!-- Y-rotate -->
+         <Label text="Y-rotate">
+         </Label>
+         <Slider fx:id="sldY4" blockIncrement="20.0" majorTickUnit="45.0"
+                 max="360.0" minorTickCount="20" showTickLabels="true">
+         </Slider>
+
+         <!-- Z-rotate -->
+         <Label text="Z-rotate">
+         </Label>
+         <Slider fx:id="sldZ4" blockIncrement="20.0" majorTickUnit="45.0"
+                 max="360.0" minorTickCount="20" showTickLabels="true">
+         </Slider>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+      </VBox>
+   </Tab>
 </TabPane>
