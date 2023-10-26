@@ -7,9 +7,12 @@ import javafx.scene.Scene
 import javafx.scene.paint.Color
 import javafx.scene.shape.Box
 import javafx.stage.Stage
+import javafx.scene.control.Slider
 
 
 class CubeController {
+    lateinit var sldX1: Slider
+
     fun initialize(){
         // create a 3D box
         val box = Box(200.0, 200.0, 200.0)
@@ -24,9 +27,6 @@ class CubeController {
         // create a camera
         val fixedEyeAtCameraZero = false
         val camera = PerspectiveCamera(fixedEyeAtCameraZero)
-        camera.translateX = 150.0
-        camera.translateY = -100.0
-        camera.translateZ = 250.0
 
         // create a scene
         val scene = Scene(group, 800.0, 800.0)
@@ -37,5 +37,8 @@ class CubeController {
         stage.title = "3D Box"
         stage.scene = scene
         stage.show()
+
+        // bind the first set of sliders to the size of the box
+        box.scaleXProperty().bind(sldX1.valueProperty())
     }
 }
