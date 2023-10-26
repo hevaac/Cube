@@ -1,46 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<?import javafx.geometry.Insets?>
-<TabPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cube.CubeController">
-   <tabs>
-      <!--tab for the cube size-->
-      <Tab closable="false" text="CubeSize">
-         <content>
-            <VBox spacing="10.0">
-               <!-- X-size -->
-               <Label text="X-Size">
-               </Label>
-               <Slider fx:id="sldX1" majorTickUnit="0.5"
-                       max="2" showTickLabels="true" value="1">
-               </Slider>
-               <VBox.margin>
-                  <Insets bottom="10.0"/>
-               </VBox.margin>
+<TabPane prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.example.cube.CubeController">
+   <!--tab for the cube size-->
+   <Tab closable="false" text="Cube Size">
+      <VBox spacing="10.0">
+         <!-- X-size -->
+         <Label text="X-Size">
+         </Label>
+         <Slider fx:id="sldX1" majorTickUnit="0.5" max="2" showTickLabels="true" value="1">
+         </Slider>
 
-               <!-- Y-size -->
-               <Label text="Y-Size">
-               </Label>
-               <Slider fx:id="sldY1" majorTickUnit="0.5"
-                       max="2" showTickLabels="true" value="1">
-               </Slider>
-               <VBox.margin>
-                  <Insets bottom="10.0"/>
-               </VBox.margin>
+         <!-- Y-size -->
+         <Label text="Y-Size">
+         </Label>
+         <Slider fx:id="sldY1" majorTickUnit="0.5" max="2" showTickLabels="true" value="1">
+         </Slider>
 
-               <!-- Z-size -->
-               <Label text="Z-Size">
-               </Label>
-               <Slider fx:id="sldZ1" majorTickUnit="0.5"
-                       max="2" showTickLabels="true" value="1">
-               </Slider>
-               <VBox.margin>
-                  <Insets bottom="10.0"/>
-               </VBox.margin>
-         </VBox>
-         </content>
-      </Tab>
-   </tabs>
+         <!-- Z-size -->
+         <Label text="Z-Size">
+         </Label>
+         <Slider fx:id="sldZ1" majorTickUnit="0.5" max="2" showTickLabels="true" value="1">
+         </Slider>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+   </VBox>
+   </Tab>
+
+   <!--tab for the cube location-->
+   <Tab closable="false" text="Cube Location">
+      <VBox spacing="10.0">
+         <!-- X-location -->
+         <Label text="X-location">
+         </Label>
+         <Slider fx:id="sldX2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
+                 showTickLabels="true" value="500">
+         </Slider>
+
+         <!-- Y-location -->
+         <Label text="Y-location">
+         </Label>
+         <Slider fx:id="sldY2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
+                 showTickLabels="true" value="500">
+         </Slider>
+
+         <!-- Z-location -->
+         <Label text="Z-location">
+         </Label>
+         <Slider fx:id="sldZ2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
+                 showTickLabels="true" value="500">
+         </Slider>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+         <VBox.margin>
+            <Insets bottom="10.0"/>
+         </VBox.margin>
+      </VBox>
+   </Tab>
 </TabPane>

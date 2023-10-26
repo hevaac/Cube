@@ -11,6 +11,9 @@ import javafx.scene.control.Slider
 
 
 class CubeController {
+    lateinit var sldZ2: Slider
+    lateinit var sldY2: Slider
+    lateinit var sldX2: Slider
     lateinit var sldZ1: Slider
     lateinit var sldY1: Slider
     lateinit var sldX1: Slider
@@ -44,5 +47,10 @@ class CubeController {
         box.scaleXProperty().bind(sldX1.valueProperty())
         box.scaleYProperty().bind(sldY1.valueProperty())
         box.scaleZProperty().bind(sldZ1.valueProperty())
+
+        // bind the second set of sliders to the location of the box
+        box.translateXProperty().bind(sldX2.valueProperty())
+        box.translateYProperty().bind(sldY2.valueProperty())
+        box.translateZProperty().bind(sldZ2.valueProperty())
     }
 }
