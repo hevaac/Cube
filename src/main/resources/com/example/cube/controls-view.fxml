@@ -4,11 +4,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<TabPane prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-         fx:controller="com.example.cube.CubeController">
+<TabPane prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cube.CubeController">
    <!--tab for the cube size-->
    <Tab closable="false" text="Cube Size">
       <VBox spacing="10.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+
          <!-- X-size -->
          <Label text="X-Size">
          </Label>
@@ -26,120 +29,87 @@
          </Label>
          <Slider fx:id="sldZ1" majorTickUnit="0.5" max="2" showTickLabels="true" value="1">
          </Slider>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
    </VBox>
    </Tab>
 
    <!--tab for the cube location-->
    <Tab closable="false" text="Cube Location">
       <VBox spacing="10.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+
          <!-- X-location -->
          <Label text="X-location">
          </Label>
-         <Slider fx:id="sldX2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
-                 showTickLabels="true" value="500">
+         <Slider fx:id="sldX2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true" value="500">
          </Slider>
 
          <!-- Y-location -->
          <Label text="Y-location">
          </Label>
-         <Slider fx:id="sldY2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
-                 showTickLabels="true" value="500">
+         <Slider fx:id="sldY2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true" value="500">
          </Slider>
 
          <!-- Z-location -->
          <Label text="Z-location">
          </Label>
-         <Slider fx:id="sldZ2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20"
-                 showTickLabels="true" value="500">
+         <Slider fx:id="sldZ2" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true" value="500">
          </Slider>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
       </VBox>
    </Tab>
 
    <!--tab for the light location-->
    <Tab closable="false" text="Light Location">
       <VBox spacing="10.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+
          <!-- X-light location -->
          <Label text="X-light location">
          </Label>
-         <Slider fx:id="sldX3" blockIncrement="20.0" majorTickUnit="250.0"
-                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         <Slider fx:id="sldX3" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true">
          </Slider>
 
          <!-- Y-size -->
          <Label text="Y-light location">
          </Label>
-         <Slider fx:id="sldY3" blockIncrement="20.0" majorTickUnit="250.0"
-                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         <Slider fx:id="sldY3" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true">
          </Slider>
 
          <!-- Z-size -->
          <Label text="Z-light location">
          </Label>
-         <Slider fx:id="sldZ3" blockIncrement="20.0" majorTickUnit="250.0"
-                 max="1000.0" minorTickCount="20" showTickLabels="true" value="500.0">
+         <Slider fx:id="sldZ3" blockIncrement="20.0" majorTickUnit="250.0" max="1000.0" minorTickCount="20" showTickLabels="true">
          </Slider>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
       </VBox>
    </Tab>
 
    <!--tab for the cube rotation-->
    <Tab closable="false" text="Cube Rotation">
       <VBox spacing="10.0">
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+
          <!-- X-rotate -->
          <Label text="X-rotate">
          </Label>
-         <Slider fx:id="sldX4" blockIncrement="20.0" majorTickUnit="45.0"
-                 max="360.0" minorTickCount="20" showTickLabels="true">
+         <Slider fx:id="sldX4" blockIncrement="20.0" majorTickUnit="45.0" max="360.0" minorTickCount="20" showTickLabels="true">
          </Slider>
 
          <!-- Y-rotate -->
          <Label text="Y-rotate">
          </Label>
-         <Slider fx:id="sldY4" blockIncrement="20.0" majorTickUnit="45.0"
-                 max="360.0" minorTickCount="20" showTickLabels="true">
+         <Slider fx:id="sldY4" blockIncrement="20.0" majorTickUnit="45.0" max="360.0" minorTickCount="20" showTickLabels="true">
          </Slider>
 
          <!-- Z-rotate -->
          <Label text="Z-rotate">
          </Label>
-         <Slider fx:id="sldZ4" blockIncrement="20.0" majorTickUnit="45.0"
-                 max="360.0" minorTickCount="20" showTickLabels="true">
+         <Slider fx:id="sldZ4" blockIncrement="20.0" majorTickUnit="45.0" max="360.0" minorTickCount="20" showTickLabels="true">
          </Slider>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
-         <VBox.margin>
-            <Insets bottom="10.0"/>
-         </VBox.margin>
       </VBox>
    </Tab>
 </TabPane>
